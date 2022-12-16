@@ -1,0 +1,1 @@
+SELECT COUNT(experiences.id IS NOT NULL) AS "currentExperiences" FROM experiences;
