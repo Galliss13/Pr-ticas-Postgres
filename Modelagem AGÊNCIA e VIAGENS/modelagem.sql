@@ -10,8 +10,8 @@ CREATE TABLE "flights" (
 	"companyId" INTEGER NOT NULL REFERENCES "companies"("id"),
 	"departureId" INTEGER NOT NULL REFERENCES "airports"("id"),
 	"destinationId" INTEGER NOT NULL REFERENCES "airports"("id"),
-	"departureTime" TIMESTAMP NOT NULL,
-	"arrivalTime" TIMESTAMP NOT NULL
+	"departureTime" DATE NOT NULL,
+	"arrivalTime" DATE NOT NULL
 )
 
 CREATE TABLE "airports" (
